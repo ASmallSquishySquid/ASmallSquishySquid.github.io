@@ -1,16 +1,14 @@
 .content {
-	max-width: 960px;
 	margin: auto;
+	float: right;
+	width: 55vw;
 }
 
 .sidebar {
 	display: flex;
-	float: left;
-	position: relative;
-	position: -webkit-sticky;
-	position: sticky;
+	position: fixed;
 	top: 0;
-	width: 33vh;
+	width: 40vw;
 	height: 100vh;
 	flex-direction: column;
 	align-items: center;
