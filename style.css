@@ -15,7 +15,7 @@
 	justify-content: center;
 }
 
-.socials-container {
+ul.socials-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -24,18 +24,18 @@
 	list-style: none;
 }
 
-.socials-icon {
+svg.socials-icon {
 	padding: 1vh;
 	width: 1.5rem;
 	height: 1.5rem;
 }
 
-.name {
+h1.name {
 	margin: 0;
 	font-size: 2.5rem;
 }
 
-.title {
+h2.title {
 	margin: 0;
 }
 
@@ -63,4 +63,18 @@ a {
 
 a:hover {
 	color: #ad1457;
+}
+
+ul.skills {
+	padding: 0;
+	list-style: none;
+}
+
+ul.skills > li {
+	display: inline-block;
+	border-radius: 20px;
+	background: #351c75;
+	padding: 0.5rem;
+	color:white;
+	font-size: 0.8rem;
 }
