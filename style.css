@@ -63,16 +63,31 @@ a {
     -moz-transition:    color 0.5s;
     -ms-transition:     color 0.5s;
     -o-transition:      color 0.5s;
-    transition:         color 0.5s;
+    transition:         color 0.5s, text-decoration 0.5s ease;
+	text-decoration-color: #351c7550;
 }
 
 a:hover {
 	color: #ad1457;
+	text-decoration-color: #ad145750;
+}
+
+.content a {
+	text-decoration-line: underline;
+	text-underline-offset: 0.3rem;
+	text-decoration-skip-ink: none;
 }
 
 ul.skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 	padding: 0;
 	list-style: none;
+	margin-top: 0.5rem;
+	column-gap: 0.25rem;
+	row-gap: 0.25rem;
+	flex-wrap: wrap;
 }
 
 ul.skills > li {
@@ -84,6 +99,14 @@ ul.skills > li {
 	font-size: 0.8rem;
 }
 
+#projects h2, #projects p {
+	margin-bottom: 0;
+}
+
+#projects p {
+	margin-top: 0.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
 
 	body {
@@ -93,10 +116,12 @@ ul.skills > li {
 
 	a {
 		color: #ad1457;
+		text-decoration-color: #ad145750;
 	}
 
 	a:hover {
 		color: #351c75;
+		text-decoration-color: #351c7550;
 	}
 
 	ul.skills > li {
