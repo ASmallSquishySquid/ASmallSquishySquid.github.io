@@ -70,13 +70,12 @@ a:hover {
 	margin: auto;
 	float: right;
 	width: 55vw;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 
 .section {
-	margin-top: 2rem;
-	text-decoration-line: underline;
-
+	margin-top: 2.5rem;
+	color: #351c75;
 }
 
 .content a {
@@ -158,6 +157,10 @@ a:hover {
 
 	.skills > li {
 		background: #351c75;
+	}
+
+	.section {
+		color: white;
 	}
 
 	.date {
