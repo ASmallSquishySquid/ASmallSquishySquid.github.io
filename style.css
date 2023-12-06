@@ -1,49 +1,3 @@
-.content {
-	margin: auto;
-	float: right;
-	width: 55vw;
-}
-
-.sidebar {
-	display: flex;
-	position: fixed;
-	top: 0;
-	width: 40vw;
-	height: 100vh;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-ul.socials-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	padding: 0;
-	margin: 5vh;
-	list-style: none;
-}
-
-svg.socials-icon {
-	padding: 1vh;
-	width: 1.5rem;
-	height: 1.5rem;
-	overflow: visible;
-}
-
-h1.name {
-	margin: 0;
-	font-size: 2.5rem;
-}
-
-h2.title {
-	margin: 0;
-}
-
-.centered {
-	text-align: center;
-}
-
 body {
 	font-family: "Noto Sans", sans-serif;
 }
@@ -72,13 +26,84 @@ a:hover {
 	text-decoration-color: #ad145750;
 }
 
+.sidebar {
+	display: flex;
+	position: fixed;
+	top: 0;
+	width: 40vw;
+	height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.socials-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 0;
+	margin: 5vh;
+	list-style: none;
+}
+
+.socials-icon {
+	padding: 1vh;
+	width: 1.5rem;
+	height: 1.5rem;
+	overflow: visible;
+}
+
+.name {
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+.role {
+	margin: 0;
+}
+
+.centered {
+	text-align: center;
+}
+
+.content {
+	margin: auto;
+	float: right;
+	width: 55vw;
+	margin-bottom: 2rem;
+}
+
+.section {
+	margin-top: 2rem;
+	text-decoration-line: underline;
+
+}
+
 .content a {
 	text-decoration-line: underline;
 	text-underline-offset: 0.3rem;
 	text-decoration-skip-ink: none;
 }
 
-ul.skills {
+.title {
+	margin-bottom: 0;
+	max-width: 40rem;
+}
+
+.description {
+	margin-bottom: 0;
+	margin-top: 0.5rem;
+}
+
+.date {
+	color: #351c75;
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: 0.5rem;
+}
+
+.skills {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -90,7 +115,7 @@ ul.skills {
 	flex-wrap: wrap;
 }
 
-ul.skills > li {
+.skills > li {
 	display: inline-block;
 	border-radius: 20px;
 	background: #351c75;
@@ -99,12 +124,19 @@ ul.skills > li {
 	font-size: 0.8rem;
 }
 
-#projects h2, #projects p {
-	margin-bottom: 0;
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #ad1457 transparent;
 }
 
-#projects p {
-	margin-top: 0.5rem;
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #ad1457;
+	border-radius: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,7 +156,19 @@ ul.skills > li {
 		text-decoration-color: #351c7550;
 	}
 
-	ul.skills > li {
+	.skills > li {
 		background: #351c75;
+	}
+
+	.date {
+		color: #ad1457;
+	}
+
+	* {
+		scrollbar-color: #351c75 transparent;
+	}
+	
+	*::-webkit-scrollbar-thumb {
+		background-color: #351c75;
 	}
 }
