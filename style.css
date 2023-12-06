@@ -11,7 +11,7 @@ p {
 }
 
 a {
-	color: #351c75;
+	color: inherit;
 	text-decoration: inherit;
 	-webkit-transition: color 0.5s;
     -moz-transition:    color 0.5s;
@@ -44,6 +44,7 @@ a:hover {
 	padding: 0;
 	margin: 5vh;
 	list-style: none;
+	color: #351c75;
 }
 
 .socials-icon {
@@ -56,6 +57,7 @@ a:hover {
 .name {
 	margin: 0;
 	font-size: 2.5rem;
+	color: #351c75;
 }
 
 .role {
@@ -146,7 +148,6 @@ a:hover {
 	}
 
 	a {
-		color: #ad1457;
 		text-decoration-color: #ad145750;
 	}
 
@@ -155,8 +156,16 @@ a:hover {
 		text-decoration-color: #351c7550;
 	}
 
+	.name {
+		color: #ad1457;
+	}
+
+	.socials-container {
+		color: #ad1457;
+	}
+
 	.skills > li {
-		background: #351c75;
+		background: #ad1457;
 	}
 
 	.section {
