@@ -1,6 +1,5 @@
 body {
 	font-family: "Noto Sans", sans-serif;
-	scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -139,6 +138,7 @@ a:hover {
 * {
 	scrollbar-width: thin;
 	scrollbar-color: #ad1457 transparent;
+	scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -196,5 +196,49 @@ a:hover {
 	
 	*::-webkit-scrollbar-thumb {
 		background-color: #351c75;
+	}
+}
+
+@media only screen and (max-width:800px) {
+	.sidebar {
+		padding: 5vw;
+		position: static;
+		width: auto;
+		height: auto;
+		align-items: start;
+		row-gap: 2rem;
+	}
+
+	.socials-container {
+		margin: 0;
+		justify-content: flex-start;
+		gap: 1rem;
+	}
+
+	.socials-icon {
+		padding: 0;
+	}
+
+	.centered {
+		text-align: inherit;
+	}
+
+	.name {
+		font-size: 3rem;
+	}
+
+	.content {
+		width: auto;
+		padding: 5vw;
+		margin: auto;
+		float: none;
+	}
+
+	.section {
+		margin: auto;
+	}
+
+	.section:last-child {
+		margin-bottom: auto;
 	}
 }
