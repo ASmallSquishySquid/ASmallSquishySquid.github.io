@@ -6,6 +6,10 @@ h1, h2, h3 {
 	font-family: "Oswald", serif;
 }
 
+h1 {
+	color: #351c75;
+}
+
 p {
 	max-width: 40rem;
 }
@@ -57,7 +61,6 @@ a:hover {
 .name {
 	margin: 0;
 	font-size: 2.5rem;
-	color: #351c75;
 }
 
 .role {
@@ -69,21 +72,22 @@ a:hover {
 }
 
 .content {
-	margin: auto;
 	float: right;
 	width: 55vw;
-	margin-bottom: 3rem;
-}
-
-.section {
-	margin-top: 2.5rem;
-	color: #351c75;
 }
 
 .content a {
 	text-decoration-line: underline;
 	text-underline-offset: 0.3rem;
 	text-decoration-skip-ink: none;
+}
+
+.section {
+	margin-block: 2rem;
+}
+
+.section + .section {
+	margin-top: 2.5rem;
 }
 
 .title {
@@ -140,11 +144,15 @@ a:hover {
 	border-radius: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
 
 	body {
 		background-color: #121212;
 		color: white;
+	}
+
+	.sidebar h1 {
+		color: #ad1457;
 	}
 
 	a {
@@ -168,7 +176,7 @@ a:hover {
 		background: #ad1457;
 	}
 
-	.section {
+	.content h1 {
 		color: white;
 	}
 
