@@ -1,5 +1,6 @@
 body {
 	font-family: "Noto Sans", sans-serif;
+	scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -39,6 +40,7 @@ a:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	row-gap: 5vh;
 }
 
 .socials-container {
@@ -46,13 +48,13 @@ a:hover {
 	flex-direction: row;
 	justify-content: space-evenly;
 	padding: 0;
-	margin: 5vh;
+	margin: 1vh;
 	list-style: none;
 	color: #351c75;
+	gap: 1.25rem;
 }
 
 .socials-icon {
-	padding: 1vh;
 	width: 1.5rem;
 	height: 1.5rem;
 	overflow: visible;
@@ -60,7 +62,7 @@ a:hover {
 
 .name {
 	margin: 0;
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 .role {
@@ -88,6 +90,10 @@ a:hover {
 
 .section + .section {
 	margin-top: 2.5rem;
+}
+
+.section:last-child {
+	margin-bottom: 3rem;
 }
 
 .title {
